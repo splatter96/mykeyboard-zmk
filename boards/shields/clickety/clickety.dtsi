@@ -1,8 +1,9 @@
 #include <dt-bindings/zmk/matrix_transform.h> // Put this with the other includes at the top of your dtsi
-#include "clickety-layouts.dtsi"
+//#include "clickety-layouts.dtsi"
 / {
     chosen {
-        zmk,physical-layout = &physical_layout0;
+        //zmk,physical-layout = &physical_layout0;
+        zmk,matrix-transform = &default_transform
         zmk,kscan = &kscan0;
         // Other chosen items
     };
