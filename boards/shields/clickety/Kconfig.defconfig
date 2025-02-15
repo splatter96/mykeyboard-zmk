@@ -1,0 +1,17 @@
+if CLICKETY_LEFT
+
+# Name must be less than 16 characters long!
+config ZMK_KEYBOARD_NAME
+    default "Clickety"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if CLICKETY_LEFT || CLICKETY_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif
